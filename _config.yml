@@ -35,8 +35,8 @@ plugins:
   - jekyll-feed
 
 comment:
-  provider:
-  disqus:         "disqus"
+  provider:       "disqus"
+  disqus:         
     shortname:    "sangrae123"
 
 # Exclude from processing.

@@ -1,25 +1,37 @@
 ---
 layout: default
+title: Home
 ---
-<main class="container">
-  <div class="row">
-    <div class="col-2">
-      <h1>{{ site.title }}</h1>
-      <p class="lead">
-          <br/>{{ site.desc }}
-      </p>
-      <article>
-        <h1>Posts</h1>
-      </article>
-      {% for post in paginator.posts %}
-      <article>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.excerpt }}</p>
-        <a href="{{ site.baseurl }}/{{ post.url }}">[ Read ]</a>
-      </article>
-      {% endfor %}
-      {% include buttons.html %}
-    </div>
-    {% include sidebar.html %}
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
   </div>
-</main>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

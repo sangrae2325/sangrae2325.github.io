@@ -1,18 +1,27 @@
 ---
 layout: default
 ---
-{% assign post = page %}
-<main class="container">
-    <div class="row">
-        <div class="col-2">
-            <a href="{{ site.baseurl }}/">[ Home ]</a>
-            <article>
-                <h1>{{ post.title }}</h1>
-                <small>{% include post_date.html %}</small>
-                <p>{{ content }}</p>
-            </article>
-            {% include buttons.html %}
-        </div>
-        {% include post_sidebar.html %}
-    </div>
-</main>
+
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
+</div>
+
+{% if site.related_posts.size >= 1 %}
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

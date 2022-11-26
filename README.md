@@ -36,7 +36,7 @@
 
 ## 3.추가 기능 구현하기
 
-
+기본적으로 블로그를 만들고 이제 추가적인 기능들을 구현했습니다.
 
 
 
@@ -50,29 +50,30 @@
 
 
 
-To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:
 
-```html
-<body>
-  ...
-</body>
+
+### favicon 추가하기
+
+추가로 구현 하라고 하신 것중에 `favicon`이 있었습니다.
+그래서 `favicon`이 무엇인지 알아봤습니다.알고 보니 사이트에 접속했을때 뜨는 작은 아이콘이었습니다. 그래서 구글링을 통해 `favicon`추가를 진행했습니다. 알게 된 과정은 다음과 같았습니다.
+**1.원하는 이미지 찾기**
+**2.favicon icon 만들기**
+**3.custom.html 수정**
+
+그런데 과정중에 _head 폴더 > custom.html을 수정해야 하는데 제가 사용한 테마에는 _head폴더가 존재하지 않았고 `head.html`로 있어서 이 파일을 수정했습니다.
+
 ```
-
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/lanyon/blob/master/public/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
-
-
-### Reverse layout
-
-![Lanyon with reverse layout](https://f.cloud.github.com/assets/98681/1825265/be03f2e4-71b0-11e3-89f1-360705524495.png)
-![Lanyon with reverse layout and open sidebar](https://f.cloud.github.com/assets/98681/1825268/be056174-71b0-11e3-88c8-5055bca4307f.png)
-
-Reverse the page orientation with a single class.
-
-```html
-<body class="layout-reverse">
-  ...
-</body>
+ <link rel="apple-touch-icon" sizes="180x180" href="assert/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assert/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assert/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff"> 
 ```
+다음과 같은 코드를 사용했습니다.
+
+
+
 
 
 ### Sidebar overlay instead of push

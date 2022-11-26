@@ -10,7 +10,7 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 
 ## Contents
 
-- [1.github와 개인 작업파일 연동하기 ](#1.github와 개인 작업파일 연동하기 )
+- [1.github와 개인 작업파일 연동하기 ](https://github.com/sangrae2325/sangrae2325.github.io#1github%EC%99%80-%EA%B0%9C%EC%9D%B8-%EC%9E%91%EC%97%85%ED%8C%8C%EC%9D%BC-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)
 - [Options](#options)
   - [Sidebar menu](#sidebar-menu)
   - [Themes](#themes)

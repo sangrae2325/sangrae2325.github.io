@@ -26,7 +26,7 @@
 그 다음으로 진행한 일은 만들 블로그의 테마를 적용하는 일이었습니다.
 수업에서 알려주신 내용으로는 [jekyll](https://jekyllrb-ko.github.io/docs/)에 들어가서 따라하면 된다고 하셨지만 Gem::FilePermissionError가 발생했습니다. 그래서 [에러 해결하기](https://jojoldu.tistory.com/288)을 참고해서 해결했습니다. 하지만 지킬 설치가 에러로 잘 되지 않았습니다. 
 그래서 원인을 찾은 결과 환경변수가 윈도우와는 달리 세팅이 자동으로 되어있지 않다는 것을 알아냈습니다. 
-![환경변수 설정](https://user-images.githubusercontent.com/106955624/204083558-a0f2ee02-6f33-48e6-b5de-e5936f926fcf.png)
+![환경변수 설정](https://user-images.githubusercontent.com/106955624/204092715-c800aa9e-9b47-433a-9d75-5d9cdd0748fb.png)
 그래서 다음과 같이 환경변수를 직접 설정해줘서 jekyll을 설치 할 수 있었습니다.
 그 후 수업 자료로 제공해주신 사이트에서 적절한 테마를 하나 골라서 다운받았고, `blog`파일에 넣어서 테마를 적용시켰습니다.
 

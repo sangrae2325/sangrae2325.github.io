@@ -4,7 +4,7 @@
 
 Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
-![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)
+![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png) 
 ![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
 
 
@@ -30,7 +30,7 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 그 다음으로 진행한 일은 만들 블로그의 테마를 적용하는 일이었습니다.
 수업에서 알려주신 내용으로는 [jekyll](https://jekyllrb-ko.github.io/docs/)에 들어가서 따라하면 된다고 하셨지만 Gem::FilePermissionError가 발생했습니다. 그래서 [에러 해결하기](https://jojoldu.tistory.com/288)]을 참고해서 해결했습니다. 하지만 지킬 설치가 에러로 잘 되지 않았습니다. 
 그래서 원인을 찾은 결과 환경변수가 윈도우와는 달리 세팅이 자동으로 되어있지 않다는 것을 알아냈습니다. 
-![환경변수 설정](https://drive.google.com/file/d/1uRUEyem__YPnTaPoVJQBfSDddC4qFqUf/view?usp=share_link)
+![환경변수 설정](http://drive.google.com/uc?export=view&id=1uRUEyem__YPnTaPoVJQBfSDddC4qFqUf_link)
 그래서 다음과 같이 환경변수를 직접 설정해줘서 jekyll을 설치 할 수 있었습니다.
 
 

@@ -11,7 +11,7 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 ## Contents
 
 - [1.github와 개인 작업파일 연동하기 ](https://github.com/sangrae2325/sangrae2325.github.io#1github%EC%99%80-%EA%B0%9C%EC%9D%B8-%EC%9E%91%EC%97%85%ED%8C%8C%EC%9D%BC-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)
-- [Options](#options)
+- [2.블로그 테마 적용하기](https://github.com/sangrae2325/sangrae2325.github.io#2.%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
   - [Sidebar menu](#sidebar-menu)
   - [Themes](#themes)
   - [Reverse layout](#reverse-layout)
@@ -22,12 +22,18 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 
 ## 1.github와 개인 작업파일 연동하기 
 
-제일 먼저 블로그 만들기를 위해 Githube에 sangrae2325.github.io-라는 repositories를 만들었습니다. 그 후 개인 작업공간으로 'blog'라는 파일을 만들어서 commit,push를 위해 연동을 하려고 했으나 무슨 문제인지 push를 하는 과정에서 에러가 발생했습니다. 무슨 문제인지 파악이 어려웠으나 끝에 발급받고 기록해두었던 토큰이 잘못됐다고 판단했습니다. 그래서 sangrae2325.github.io라는 repositories를 새로 만들어 다시 시도해서 성공했습니다.
+제일 먼저 블로그 만들기를 위해 Githube에 sangrae2325.github.io-라는 repositories를 만들었습니다. 그 후 개인 작업공간으로 '<blog>'라는 파일을 만들어서 commit,push를 위해 연동을 하려고 했으나 무슨 문제인지 push를 하는 과정에서 에러가 발생했습니다. 무슨 문제인지 파악이 어려웠으나 끝에 발급받고 기록해두었던 토큰이 잘못됐다고 판단했습니다. 그래서 sangrae2325.github.io라는 repositories를 새로 만들어 다시 시도해서 성공했습니다.
 
 
-## Options
+## 2.블로그 테마 적용하기
 
-Lanyon includes some customizable options, typically applied via classes on the `<body>` element.
+그 다음으로 진행한 일은 만들 블로그의 테마를 적용하는 일이었습니다.
+수업에서 알려주신 내용으로는 [jekyll](https://jekyllrb-ko.github.io/docs/)에 들어가서 따라하면 된다고 하셨지만 Gem::FilePermissionError가 발생했습니다. 그래서 [에러 해결하기](https://jojoldu.tistory.com/288)]을 참고해서 해결했습니다. 하지만 지킬 설치가 에러로 잘 되지 않았습니다. 
+그래서 원인을 찾은 결과 환경변수가 윈도우와는 달리 세팅이 자동으로 되어있지 않다는 것을 알아냈습니다. 
+![환경변수 설정](https://drive.google.com/file/d/1uRUEyem__YPnTaPoVJQBfSDddC4qFqUf/view?usp=share_link)
+그래서 다음과 같이 환경변수를 직접 설정해줘서 jekyll을 설치 할 수 있었습니다.
+
+
 
 
 ### Sidebar menu

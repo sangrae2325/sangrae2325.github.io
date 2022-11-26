@@ -1,18 +1,15 @@
 # github 블로그 만들기
+~~블로그 미리보기~~
+이미지 첨부
 
-
-
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
-
-![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png) 
-![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
+이런 블로그를 만든 과정을 소개합니다!!
 
 
 ## Contents
 
 - [1.github와 개인 작업파일 연동하기 ](https://github.com/sangrae2325/sangrae2325.github.io#1github%EC%99%80-%EA%B0%9C%EC%9D%B8-%EC%9E%91%EC%97%85%ED%8C%8C%EC%9D%BC-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)
 - [2.블로그 테마 적용하기](https://github.com/sangrae2325/sangrae2325.github.io#2.%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
-  - [Sidebar menu](#sidebar-menu)
+- [3.댓글 기능 추가하기]()
   - [Themes](#themes)
   - [Reverse layout](#reverse-layout)
 - [Development](#development)
@@ -22,7 +19,7 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 
 ## 1.github와 개인 작업파일 연동하기 
 
-제일 먼저 블로그 만들기를 위해 Githube에 sangrae2325.github.io-라는 repositories를 만들었습니다. 그 후 개인 작업공간으로 '<blog>'라는 파일을 만들어서 commit,push를 위해 연동을 하려고 했으나 무슨 문제인지 push를 하는 과정에서 에러가 발생했습니다. 무슨 문제인지 파악이 어려웠으나 끝에 발급받고 기록해두었던 토큰이 잘못됐다고 판단했습니다. 그래서 sangrae2325.github.io라는 repositories를 새로 만들어 다시 시도해서 성공했습니다.
+제일 먼저 블로그 만들기를 위해 Githube에 sangrae2325.github.io-라는 repositories를 만들었습니다. 그 후 개인 작업공간으로 `blog`라는 파일을 만들어서 commit,push를 위해 연동을 하려고 했으나 무슨 문제인지 push를 하는 과정에서 에러가 발생했습니다. 무슨 문제인지 파악이 어려웠으나 끝에 발급받고 기록해두었던 토큰이 잘못됐다고 판단했습니다. 그래서 sangrae2325.github.io라는 repositories를 새로 만들어 다시 시도해서 성공했습니다.
 
 
 ## 2.블로그 테마 적용하기
@@ -32,20 +29,17 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 그래서 원인을 찾은 결과 환경변수가 윈도우와는 달리 세팅이 자동으로 되어있지 않다는 것을 알아냈습니다. 
 ![환경변수 설정](https://user-images.githubusercontent.com/106955624/204083558-a0f2ee02-6f33-48e6-b5de-e5936f926fcf.png)
 그래서 다음과 같이 환경변수를 직접 설정해줘서 jekyll을 설치 할 수 있었습니다.
+그 후 수업 자료로 제공해주신 사이트에서 적절한 테마를 하나 골라서 다운받았고, `blog`파일에 넣어서 테마를 적용시켰습니다.
 
 
 
+## 3.댓글 기능 추가하기
 
-### Sidebar menu
+그 후 댓글 기능을 추가 하는 작업을 진행헀습니다. 
+**무엇을 이용했나?** disqus 사이트를 이용했습니다.
+제공해주신 pdf에 나오는 과정대로 진행했습니다.
+`config.yml`에 `key-value`를 추가하고 `Universal Code`를 복사한후 페이지에 맞게 수정하라는 말이 무슨 말인지 잘 모르겠어서 조금 헤메다 친구들에게 물어봐서 해결 할 수 있었습니다.
 
-Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
-
-```
----
-layout: page
-title: About
----
-```
 
 **Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
 

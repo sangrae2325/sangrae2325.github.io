@@ -9,7 +9,8 @@
 
 - [1.github와 개인 작업파일 연동하기 ](https://github.com/sangrae2325/sangrae2325.github.io#1github%EC%99%80-%EA%B0%9C%EC%9D%B8-%EC%9E%91%EC%97%85%ED%8C%8C%EC%9D%BC-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)
 - [2.블로그 테마 적용하기](https://github.com/sangrae2325/sangrae2325.github.io#2.%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
-- [3.댓글 기능 추가하기](https://github.com/sangrae2325/sangrae2325.github.io#2.%EB%8C%93%EA%B8%80-%EA%B8%B0%EB%8A%A5-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
+- [3.추가 기능 구현하기](https://github.com/sangrae2325/sangrae2325.github.io#2.%EB%8C%93%EA%B8%80-%EA%B8%B0%EB%8A%A5-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
+- [3.댓글 기능 추가하기]()
   - [Themes](#themes)
   - [Reverse layout](#reverse-layout)
 - [Development](#development)
@@ -33,25 +34,20 @@
 
 
 
-## 3.댓글 기능 추가하기
+## 3.추가 기능 구현하기
 
-그 후 댓글 기능을 추가 하는 작업을 진행헀습니다. \n
+
+
+
+
+### 댓글 기능 추가하기
+
+그 후 댓글 기능을 추가 하는 작업을 진행헀습니다. 
 **무엇을 이용했나?** disqus 사이트를 이용했습니다.
 제공해주신 pdf에 나오는 과정대로 진행했습니다.
 `config.yml`에 `key-value`를 추가하고 `Universal Code`를 복사한후 페이지에 맞게 수정하라는 말이 무슨 말인지 잘 모르겠어서 조금 헤메다 친구들에게 물어봐서 해결 할 수 있었습니다.
 
 
-
-### Themes
-
-Lanyon ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
-
-![Lanyon with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)
-![Lanyon with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)
-
-There are eight themes available at this time.
-
-![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
 
 To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:
 

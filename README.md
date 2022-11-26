@@ -8,9 +8,9 @@
 ## Contents
 
 - [1.github와 개인 작업파일 연동하기 ](https://github.com/sangrae2325/sangrae2325.github.io#1github%EC%99%80-%EA%B0%9C%EC%9D%B8-%EC%9E%91%EC%97%85%ED%8C%8C%EC%9D%BC-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)
-- [2.블로그 테마 적용하기](https://github.com/sangrae2325/sangrae2325.github.io#2.%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
-- [3.추가 기능 구현하기](https://github.com/sangrae2325/sangrae2325.github.io#2.%EB%8C%93%EA%B8%80-%EA%B8%B0%EB%8A%A5-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
-- [3.댓글 기능 추가하기]()
+- [2.블로그 테마 적용하기](https://github.com/sangrae2325/sangrae2325.github.io#2%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
+- [3.추가 기능 구현하기](https://github.com/sangrae2325/sangrae2325.github.io#3%EC%B6%94%EA%B0%80-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
+- [3.댓글 기능 추가하기](https://github.com/sangrae2325/sangrae2325.github.io#%EB%8C%93%EA%B8%80-%EA%B8%B0%EB%8A%A5-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
   - [Themes](#themes)
   - [Reverse layout](#reverse-layout)
 - [Development](#development)
@@ -53,7 +53,7 @@
 To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:
 
 ```html
-<body class="theme-base-08">
+<body>
   ...
 </body>
 ```

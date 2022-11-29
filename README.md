@@ -12,8 +12,8 @@
 - [3.추가 기능 구현하기](https://github.com/sangrae2325/sangrae2325.github.io#3%EC%B6%94%EA%B0%80-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
   - [댓글 기능 추가하기](https://github.com/sangrae2325/sangrae2325.github.io#%EB%8C%93%EA%B8%80-%EA%B8%B0%EB%8A%A5-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
   - [favicon 추가하기](https://github.com/sangrae2325/sangrae2325.github.io#favicon-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
-  - [Google Analytics 추가하기]()
-- [License](#license)
+  - [Google Analytics 추가하기](https://github.com/sangrae2325/sangrae2325.github.io#google-analytics-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
+
 
 
 ## 1.github와 개인 작업파일 연동하기 
@@ -110,37 +110,4 @@ It's also available for a reversed layout when you add both classes:
 </body>
 ```
 
-### Sidebar open on page load
 
-Show an open sidebar on page load by modifying the `<input>` tag within the `sidebar.html` layout to add the `checked` boolean attribute:
-
-```html
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
-```
-
-Using Liquid you can also conditionally show the sidebar open on a per-page basis. For example, here's how you could have it open on the homepage only:
-
-```html
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.title =="Home" %}checked{% endif %}>
-```
-
-## Development
-
-Lanyon has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be to submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
-
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
-
-
-## License
-
-Open sourced under the [MIT license](LICENSE.md).
-
-<3

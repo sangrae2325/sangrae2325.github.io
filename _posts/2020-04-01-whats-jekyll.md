@@ -28,14 +28,18 @@ google Analytics를 위한 google 아이디가 필요합니다.
 스트림 생성을 눌러 `웹`을 눌러주세요.
 
 
+![Analytics](https://user-images.githubusercontent.com/106955624/204476627-640c7a72-124a-4098-9f93-f4caee80ddf6.png)
+
+다음 화면에서 URL에 자신의 블로그 주소를 입력하고 이름은 원하는 것을 입력하면 됩니다. 이후 스트림 만들기를 누르면 됩니다.
+
+![Analytics](https://user-images.githubusercontent.com/106955624/204477081-c93a5cd5-e2a7-4aee-8f56-44e052bb76ef.png)
+
+그리고 해당 ID를 복사합니다.
+
+![Analytics](https://user-images.githubusercontent.com/106955624/204477327-455e5a01-5e17-470e-a27c-00f1bb008ba0.png)
+다음과 같이 본인의 `config.yml`파일에 추가 합니다.(ID는 본인의 것을 사용하세요 !!)
 
 
+![Analytics](https://user-images.githubusercontent.com/106955624/204477722-cc3bf2bb-2cd6-4df7-a0ce-29c8f173ea0c.png)
+commit을 하고 기다리면 다음과 같은 창이 뜨신게 확인되시면 성공입니다. !!
 
-
-[Jekyll](https://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
-
-  > Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.
-
-It's an immensely useful tool and one we encourage you to use here with Lanyon.
-
-Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).

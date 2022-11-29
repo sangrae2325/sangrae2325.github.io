@@ -1,6 +1,6 @@
 # github 블로그 만들기
 ~~블로그 미리보기~~
-이미지 첨부
+![블로그](https://user-images.githubusercontent.com/106955624/204478678-ad889641-f97d-4aff-80d9-078bdb98acbf.png)
 
 이런 블로그를 만든 과정을 소개합니다!!
 
@@ -12,7 +12,7 @@
 - [3.추가 기능 구현하기](https://github.com/sangrae2325/sangrae2325.github.io#3%EC%B6%94%EA%B0%80-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
   - [댓글 기능 추가하기](https://github.com/sangrae2325/sangrae2325.github.io#%EB%8C%93%EA%B8%80-%EA%B8%B0%EB%8A%A5-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
   - [favicon 추가하기](https://github.com/sangrae2325/sangrae2325.github.io#favicon-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
-  - [Author](#author)
+  - [Google Analytics 추가하기]()
 - [License](#license)
 
 
@@ -70,8 +70,24 @@
 ```
 다음과 같은 코드를 사용했습니다.
 
+### Google Analytics 추가하기
 
+저는 추가적으로 Google Analytics기능을 블로그에 적용시켰습니다.
+블로그에 들어오는 사람들의 접속수,평균 접속시간등을 분석해주는 프로그램입니다.
+해당 블로그에 포스팅 `Google Analytics 추가하기`에 자세한 과정이 나와있습니다.
+하지만 도중에 태그가 활성화 되지 않았다는 에러가 보여서 
 
+```
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YYJL99VPQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4YYJL99VPQ');
+```
+다음과 같은 코드를 `head`파일에 추가해줘서 해결 할 수 있었습니다.
 
 
 ### Sidebar overlay instead of push

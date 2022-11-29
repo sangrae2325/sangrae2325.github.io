@@ -22,7 +22,11 @@ google Analytics를 위한 google 아이디가 필요합니다.
 
 ![Analytics](https://user-images.githubusercontent.com/106955624/204440027-730bad53-4436-4e78-adae-0258b400bb5e.png)
 
-다음 페이지에서 값들을 입력한후 다음을 눌러 계정을 생성해주세요.
+다음 페이지에서 값들을 입력한후 다음을 눌러 가입을 진행해주세요.
+
+![Analytics](https://user-images.githubusercontent.com/106955624/204444596-f980b43b-e0fb-4235-b36e-5aa0f776427b.png)
+스트림 생성을 눌러 `웹`을 눌러주세요.
+
 
 
 

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Google Analytics 추가하기
+date: 2022-11-23 16:32:00 +0900
+categories: jekyll update
+comments: true
 ---
 # github 블로그에 기능 추가하기
 

@@ -29,6 +29,15 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+## Analytics
+analytics:
+  provider: google # false (default), "google" , "custom"
+
+  ## Google Analytics
+  google:
+    tracking_id : G-4YYJL99VPQ
+    anonymize_ip: false
+
 # Build settings
 theme: minima
 plugins:
